@@ -29,22 +29,19 @@ for (let i = 1; i <= 100; i++) {
     if ((i % 3 === 0) && (i % 5 === 0)) {
         console.log("FizzBuzz");
         listItem.append("FizzBuzz");
-        list.appendChild(listItem);
     // Controllo se il numero è un multiplo di 3
     } else if (i % 3 === 0) {
         console.log("Fizz");
         listItem.append("Fizz");
-        list.appendChild(listItem);
     // Controllo se il numero è un multiplo di 5
     } else if (i % 5 === 0) {
         console.log("Buzz");
         listItem.append("Buzz");
-        list.appendChild(listItem);
     } else {
         console.log(i);
         listItem.append(i);
-        list.appendChild(listItem);
     }
+    list.appendChild(listItem);
 };
 
 // Monto la lista nel DOM
